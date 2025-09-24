@@ -1,0 +1,52 @@
+/* semantic color variables for this project */
+:root {
+  --color-background: #f6feff;
+  --color-background-second: #e0f9fe;
+  --color-background-third: #b5f3ff;
+  --color-background-forth: #86eafe;
+  --color-border: #44cde6;
+  --color-text: #1c1d1e;
+  --color-text-second: #4b4e51;
+  --section-gap: 12rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --color-background: #4b4e51;
+    --color-background-second: #1c1d1e;
+    --color-text: #fdffff;
+    --color-text-second: #98d5e0;
+  } */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.4;
+  font-size: 1.6rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+  font-weight: 700;
+}
+
+button,
+input {
+  font-size: inherit;
+}
