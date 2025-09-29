@@ -9,6 +9,16 @@
   flex-direction: column;
 }
 
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.loader {
+  font-size: 2rem;
+}
+
 .btn {
   align-self: flex-end;
   padding: 1.2rem 1.5rem;
@@ -23,6 +33,35 @@
 .btn:hover {
   background: var(--color-background-forth);
   border: 1px solid var(--color-background-forth);
+}
+
+.pagination {
+  margin-top: 3rem;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.pagination__page {
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-second);
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.pagination__page:hover,
+.pagination__page--current {
+  color: var(--color-text);
+  border-color: var(--color-background-forth);
+  background: var(--color-background-forth);
 }
 
 @media (min-width: 1024px) {}

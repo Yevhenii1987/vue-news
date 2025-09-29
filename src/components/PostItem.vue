@@ -6,6 +6,9 @@
       <p><strong>Description: </strong>{{ post.body }}</p>
     </div>
     <div class="post-btns">
+      <ui-button @click="$router.push(`/posts/${post.id}`)"
+        >View more</ui-button
+      >
       <ui-button @click="$emit('remove', post)">Delete</ui-button>
     </div>
   </div>
